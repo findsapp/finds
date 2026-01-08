@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finds</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="ageScreen" class="screen">
+    <h1 class="logo">F</h1>
+    <p>Diese App ist ab 16+</p>
+    <button onclick="confirmAge()">Ich bin 16+</button>
+</div>
+
+<div id="loginScreen" class="screen hidden">
+    <h2>Registrieren</h2>
+    <input id="username" placeholder="Name">
+    <input id="age" type="number" placeholder="Alter">
+    <input type="file" id="photoInput" accept="image/*">
+    <button onclick="register()">Starten</button>
+</div>
+
+<div id="appScreen" class="screen hidden">
+    <div id="card" class="card">
+        <img id="photo">
+        <h2 id="name"></h2>
+    </div>
+
+    <div class="buttons">
+        <button onclick="dislike()">❌</button>
+        <button onclick="like()">❤️</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
